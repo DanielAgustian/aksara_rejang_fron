@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/ypv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ypv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:text="Play Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ypv" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnYoutube"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Apa Itu Aksara Rejang?"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYoutube" />
+
+    <TextView
+
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="265dp"
+        android:layout_below="@+id/btnYoutube"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:lines="25"
+        android:maxLines="20"
+        android:text="Aksara Rejang termasuk dalam kelompok naskah sebagai Surat Ulu ('skrip hulu').Aksara Rejang digunakan dalam penulisan bahasa Rejang, salah satu bahasa daerah Bengkulu.
+Aksara ini juga  dikenal sebagai Kaganga, setelah tiga huruf pertama, dan terkait dengan huruf Batak dan Bugis. Aksara Rejang berkembang dari 2 jenis aksara , yaitu aksara Pallawa(India) dan Kawi(Jawa).
+
+\n\nDewasa ini, aksara Rejang sudah jarang digunakan dikarenakan tidak adanya pendidikan tentang aksara ini dan luasnya penggunaan aksara Latin. Oleh karena itu, askara Rejang telah kehilangan tempatnya sebagai penulisan untuk Bahasa Rejang.
+Ditambah dengan jumlah pengguna bahasa Rejang yang sedikit menambah keceatan hilangnya bahasa ini."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></TextView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="back"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
